@@ -1,5 +1,4 @@
 ## umdlua (URL Module Definition of Lua)
-----------------------------
 this is a UMD Module and also is a UMD tool
 
 
