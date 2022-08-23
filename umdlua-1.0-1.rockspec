@@ -1,5 +1,5 @@
 package = "umdlua"
-version = "dev-1"
+version = "1.0-1"
 source = {
     url = "git://github.com/vanishs/umdlua.git"
 }
