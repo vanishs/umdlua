@@ -13,11 +13,11 @@ return require("umd").define({
 ```
 - You can package UMD Module (including the UMDs they refer to) into a single lua file. like this(package github.com/vanishs/umdluam2-tag1/main to single.lua):
 ```shell
-umd.lua single.lua github.com/vanishs/umdluam2-tag1/main
+umd.lua src single.lua github.com/vanishs/umdluam2-tag1/main
 ```
 - You can package UMD Module and execute a function in a single lua file. like this(package github.com/vanishs/umdluam2-tag1/main to func1.lua and execute function func1)
 ```shell
-umd.lua func1 github.com/vanishs/umdluam2-tag1/main
+umd.lua src func1 github.com/vanishs/umdluam2-tag1/main
 ```
 
 ### HOW TO WRITE A UMD?

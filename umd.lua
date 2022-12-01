@@ -164,10 +164,15 @@ end
 
 
 
-if #arg < 2 then
-    print("cmd demo: umd.lua output.lua moduleName...")
+if #arg < 3 then
+    print("cmd demo: umd.lua src output.lua moduleName...")
+    print("cmd demo: umd.lua src myMainFunc moduleName...")
     return
 end
+
+local srcDir = arg[1]
+srcDir = srcDir .. "/"
+table.remove(arg, 1)
 
 local mainFunc = nil
 local outputName = arg[1]
@@ -278,7 +283,7 @@ local function bundleModule(moduleName)
     end
 
 
-    local file, err = io.open(fn, "r")
+    local file, err = io.open(srcDir .. fn, "r")
     if file == nil then
         print(err)
         return false
